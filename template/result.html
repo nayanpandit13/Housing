@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        /* General Reset and Body Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background: #004d99;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Result Section */
+        .result-section {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: white;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .result-section h2 {
+            color: #004d99;
+            margin-bottom: 1rem;
+        }
+
+        .result-section p {
+            font-size: 1rem;
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        .result-section strong {
+            font-size: 1.5rem;
+            color: #007acc;
+        }
+
+        /* Back Button */
+        .back-button {
+            margin-top: 2rem;
+        }
+
+        .back-button a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-button a:hover {
+            background: #005f99;
+        }
+
+        /* Footer */
+        footer {
+            background: #004d99;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Prediction Result</h1>
+</header>
+
+<section class="result-section">
+    <h2>Your Prediction Result</h2>
+    <p>The estimated price for the area you entered is:</p>
+    <p><strong >{{price}}</strong> Rs.</p>
+    <a href="/" <button type="submit" class="btn btn-primary">Go Back</button></a>
+</section>
+
+<footer>
+    <p>&copy; 2025 House Price Prediction. All rights reserved.</p>
+</footer>
+</body>
+</html>

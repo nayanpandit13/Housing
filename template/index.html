@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <style>
+        /* General Reset and Body Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: url("C:\Users\nayan\Downloads\House.jpg") ;
+        }
+
+        /* Header */
+        header {
+            background: #004d99;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #007acc;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #005f99;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: url("C:\Users\nayan\Downloads\House.jpg") no-repeat center center/cover;
+            margin-bottom: 1.5rem;
+            color: white;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: white;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        /* Input Section */
+        .input-section {
+            padding: 1.5rem;
+            text-align: center;
+            background-image:"C:\Users\nayan\Downloads\House.jpg";
+            border: 1px solid #ddd;
+            margin: 1rem auto;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-section h2 {
+            margin-bottom: 1rem;
+            color: #004d99;
+        }
+
+        .input-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .input-section input {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .input-section button {
+            padding: 0.75rem;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .input-section button:hover {
+            background: #005f99;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 2rem 1rem;
+            background: #f2f9ff;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            color: #004d99;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: #004d99;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body background="C:\Users\nayan\Downloads\House.jpg">
+
+<header> 
+    <h1>Ghar Khojo</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Find Your Dream Home</h2>
+    <p>Get accurate predictions for house prices based on your inputs.</p>
+</section>
+
+<section class="input-section">
+    <h2>Enter Area for Price Prediction</h2>
+    <form action="/" method="POST">
+        <input type="text" name="area" placeholder="Enter area in square feet" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section id="features" class="features">
+    <div class="feature">
+        <h3>Easy to Use</h3>
+        <p>Simply input key details and get instant predictions.</p>
+    </div>
+    <div class="feature">
+        <h3>Accurate Predictions</h3>
+        <p>Powered by advanced machine learning algorithms.</p>
+    </div>
+    <div class="feature">
+        <h3>Comprehensive Insights</h3>
+        <p>Analyze trends and make informed decisions.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 House Price Prediction. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
